@@ -1,9 +1,19 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
-</div>
+<article role="main" class="">
+    <header>
+        <a href="{{site.url}}" id="home_link">«</a>
+        <div class="meta">
+            <time datetime="{{ page.date | date_to_string }}">
+                <a href="{{ site.url}}">{{ page.date | date_to_string }}</a>
+            </time> <span class="count" id="js-reading-time">
+            </span>
+        </div>
+        <h1>{{ site.title}}</h1>
+    </header>
+    <div class="text" id="js-post-content">
+        {{content}}
+    </div>
+</article>

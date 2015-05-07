@@ -1,4 +1,6 @@
 name: Jekyll Roon
 markdown: kramdown
+description: Ghost's Roon on Jekyll
 highlighter: pygments # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+url: /
